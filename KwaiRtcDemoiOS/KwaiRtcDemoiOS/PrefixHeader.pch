@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  KwaiRtcDemoiOS
+//
+//  Created by leon on 2021/9/12.
+//  Copyright © 2021 kuaishou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
+#import "KWCommonUtil.h"
+#import "UIView+KWExt.h"
+#import "NSDictionary+KWExt.h"
+
+// 在这里替换AppId / AppName / AppSign
+#define KRTC_APP_ID @""
+#define KRTC_APP_NAME @""
+#define KRTC_APP_SIGN @""
+
+#define RTC_DEMO_LOG_PATH @"krtc_logs"
+#define RTC_DEMO_LOG_FILE @"krtc_demo.log"
+#define RTC_ROOM_NAVIBAR_HEIGHT (KWNavigationBarHeight + 8)
+#define RTC_ROOM_TOOLBAR_HEIGHT ([KWCommonUtil isIphoneX] ? 86 : 74)
+
+#endif /* PrefixHeader_pch */

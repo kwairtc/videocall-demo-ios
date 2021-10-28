@@ -1,0 +1,10 @@
+platform :ios, '10.0'
+
+target 'KwaiRtcDemoiOS' do
+  use_frameworks!
+
+  pod 'MBProgressHUD', '1.2.0'
+  pod 'Masonry', '1.1.0'
+  pod 'KRtcEngine_iOS', :podspec => 'https://s1-11693.kwimgs.com/kos/nlav11693/ios/5.8/KRtcEngine_iOS.5.8.46.podspec'
+
+end

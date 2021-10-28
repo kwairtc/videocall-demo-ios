@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		351D4CC726EDB05B008B4639 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4CC626EDB05B008B4639 /* AppDelegate.m */; };
+		351D4CD226EDB05C008B4639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351D4CD126EDB05C008B4639 /* Assets.xcassets */; };
+		351D4CD526EDB05C008B4639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351D4CD326EDB05C008B4639 /* LaunchScreen.storyboard */; };
+		351D4CD826EDB05C008B4639 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4CD726EDB05C008B4639 /* main.m */; };
+		351D4D0526EDDDA7008B4639 /* KWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D0426EDDDA7008B4639 /* KWBaseViewController.m */; };
+		351D4D0926EDDDD0008B4639 /* KWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D0826EDDDD0008B4639 /* KWLoginViewController.m */; };
+		351D4D3226EDE1AF008B4639 /* KWCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D3126EDE1AF008B4639 /* KWCommonUtil.m */; };
+		351D4D3B26EE36FA008B4639 /* KWRtcRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D3A26EE36FA008B4639 /* KWRtcRoomViewController.m */; };
+		351D4D5426EE3840008B4639 /* KWRtcPlayerContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D5326EE3840008B4639 /* KWRtcPlayerContainerView.m */; };
+		351D4D5826EE4A4B008B4639 /* KWRtcRoomParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 351D4D5726EE4A4B008B4639 /* KWRtcRoomParam.m */; };
+		353179DA26F4CB8C003416C3 /* KWRtcSharedDataMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 353179D926F4CB8C003416C3 /* KWRtcSharedDataMgr.m */; };
+		354248DB2728484A007C65E4 /* KWRtcDemoUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 354248DA2728484A007C65E4 /* KWRtcDemoUI.m */; };
+		35998B0226F1F23F00458CC7 /* UIButton+KWExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 35998B0126F1F23F00458CC7 /* UIButton+KWExt.m */; };
+		35C2D96427294B2A008B3FB5 /* KWRtcQosInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C2D96327294B2A008B3FB5 /* KWRtcQosInfo.m */; };
+		35D9DA6626FDED2900881C1B /* NSDictionary+KWExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9DA6526FDED2900881C1B /* NSDictionary+KWExt.m */; };
+		35DE197A26F8B7B70017A149 /* UIView+KWExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE197926F8B7B70017A149 /* UIView+KWExt.m */; };
+		35EDC99026F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC98F26F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.m */; };
+		35F610F726F330940041CE45 /* KWRtcUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F610F626F330940041CE45 /* KWRtcUser.m */; };
+		35F610FA26F338D90041CE45 /* KWRtcRoomDataMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F610F926F338D90041CE45 /* KWRtcRoomDataMgr.m */; };
+		35F788A6270323F6005212D0 /* KWSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F788A5270323F6005212D0 /* KWSettingTableViewCell.m */; };
+		35F788A927032409005212D0 /* KWSettingTableCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F788A827032409005212D0 /* KWSettingTableCellItem.m */; };
+		35F788AC2703467A005212D0 /* KWSettingResolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F788AB2703467A005212D0 /* KWSettingResolutionViewController.m */; };
+		35F788AF27034B26005212D0 /* KWSettingResolutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F788AE27034B26005212D0 /* KWSettingResolutionTableViewCell.m */; };
+		35F7C08526F08F8900706321 /* KWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7C08426F08F8900706321 /* KWSettingViewController.m */; };
+		35F7C08826F0909500706321 /* KWRtcPlayerWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7C08726F0909500706321 /* KWRtcPlayerWrapperView.m */; };
+		D1D167F788BB4B066DE77ACB /* Pods_KwaiRtcDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9076ED1ED98D8D96DB05AD44 /* Pods_KwaiRtcDemoiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35F7C07E26F08A0800706321 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		351D4CC226EDB05B008B4639 /* KwaiRtcDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KwaiRtcDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		351D4CC526EDB05B008B4639 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		351D4CC626EDB05B008B4639 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		351D4CD126EDB05C008B4639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		351D4CD426EDB05C008B4639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		351D4CD626EDB05C008B4639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351D4CD726EDB05C008B4639 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		351D4D0326EDDDA7008B4639 /* KWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWBaseViewController.h; sourceTree = "<group>"; };
+		351D4D0426EDDDA7008B4639 /* KWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWBaseViewController.m; sourceTree = "<group>"; };
+		351D4D0726EDDDD0008B4639 /* KWLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWLoginViewController.h; sourceTree = "<group>"; };
+		351D4D0826EDDDD0008B4639 /* KWLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWLoginViewController.m; sourceTree = "<group>"; };
+		351D4D2C26EDE0B7008B4639 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		351D4D3026EDE1AF008B4639 /* KWCommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWCommonUtil.h; sourceTree = "<group>"; };
+		351D4D3126EDE1AF008B4639 /* KWCommonUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWCommonUtil.m; sourceTree = "<group>"; };
+		351D4D3926EE36FA008B4639 /* KWRtcRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcRoomViewController.h; sourceTree = "<group>"; };
+		351D4D3A26EE36FA008B4639 /* KWRtcRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcRoomViewController.m; sourceTree = "<group>"; };
+		351D4D5226EE3840008B4639 /* KWRtcPlayerContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcPlayerContainerView.h; sourceTree = "<group>"; };
+		351D4D5326EE3840008B4639 /* KWRtcPlayerContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcPlayerContainerView.m; sourceTree = "<group>"; };
+		351D4D5626EE4A4B008B4639 /* KWRtcRoomParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcRoomParam.h; sourceTree = "<group>"; };
+		351D4D5726EE4A4B008B4639 /* KWRtcRoomParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcRoomParam.m; sourceTree = "<group>"; };
+		353179D826F4CB8C003416C3 /* KWRtcSharedDataMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcSharedDataMgr.h; sourceTree = "<group>"; };
+		353179D926F4CB8C003416C3 /* KWRtcSharedDataMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcSharedDataMgr.m; sourceTree = "<group>"; };
+		354248D92728484A007C65E4 /* KWRtcDemoUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcDemoUI.h; sourceTree = "<group>"; };
+		354248DA2728484A007C65E4 /* KWRtcDemoUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcDemoUI.m; sourceTree = "<group>"; };
+		35998B0026F1F23F00458CC7 /* UIButton+KWExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+KWExt.h"; sourceTree = "<group>"; };
+		35998B0126F1F23F00458CC7 /* UIButton+KWExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KWExt.m"; sourceTree = "<group>"; };
+		35C2D96227294B2A008B3FB5 /* KWRtcQosInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWRtcQosInfo.h; sourceTree = "<group>"; };
+		35C2D96327294B2A008B3FB5 /* KWRtcQosInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWRtcQosInfo.m; sourceTree = "<group>"; };
+		35D9DA6426FDED2900881C1B /* NSDictionary+KWExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KWExt.h"; sourceTree = "<group>"; };
+		35D9DA6526FDED2900881C1B /* NSDictionary+KWExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KWExt.m"; sourceTree = "<group>"; };
+		35DE197826F8B7B70017A149 /* UIView+KWExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KWExt.h"; sourceTree = "<group>"; };
+		35DE197926F8B7B70017A149 /* UIView+KWExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KWExt.m"; sourceTree = "<group>"; };
+		35EDC98E26F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcPlayerCollectionViewCell.h; sourceTree = "<group>"; };
+		35EDC98F26F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcPlayerCollectionViewCell.m; sourceTree = "<group>"; };
+		35F610F526F330940041CE45 /* KWRtcUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcUser.h; sourceTree = "<group>"; };
+		35F610F626F330940041CE45 /* KWRtcUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcUser.m; sourceTree = "<group>"; };
+		35F610F826F338D90041CE45 /* KWRtcRoomDataMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcRoomDataMgr.h; sourceTree = "<group>"; };
+		35F610F926F338D90041CE45 /* KWRtcRoomDataMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcRoomDataMgr.m; sourceTree = "<group>"; };
+		35F788A4270323F6005212D0 /* KWSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingTableViewCell.h; sourceTree = "<group>"; };
+		35F788A5270323F6005212D0 /* KWSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingTableViewCell.m; sourceTree = "<group>"; };
+		35F788A727032409005212D0 /* KWSettingTableCellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingTableCellItem.h; sourceTree = "<group>"; };
+		35F788A827032409005212D0 /* KWSettingTableCellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingTableCellItem.m; sourceTree = "<group>"; };
+		35F788AA2703467A005212D0 /* KWSettingResolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingResolutionViewController.h; sourceTree = "<group>"; };
+		35F788AB2703467A005212D0 /* KWSettingResolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingResolutionViewController.m; sourceTree = "<group>"; };
+		35F788AD27034B26005212D0 /* KWSettingResolutionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingResolutionTableViewCell.h; sourceTree = "<group>"; };
+		35F788AE27034B26005212D0 /* KWSettingResolutionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingResolutionTableViewCell.m; sourceTree = "<group>"; };
+		35F7C08326F08F8900706321 /* KWSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingViewController.h; sourceTree = "<group>"; };
+		35F7C08426F08F8900706321 /* KWSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingViewController.m; sourceTree = "<group>"; };
+		35F7C08626F0909500706321 /* KWRtcPlayerWrapperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWRtcPlayerWrapperView.h; sourceTree = "<group>"; };
+		35F7C08726F0909500706321 /* KWRtcPlayerWrapperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWRtcPlayerWrapperView.m; sourceTree = "<group>"; };
+		76B1950064CA47752C1C7B22 /* Pods-KwaiRtcDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KwaiRtcDemoiOS.release.xcconfig"; path = "Target Support Files/Pods-KwaiRtcDemoiOS/Pods-KwaiRtcDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
+		9076ED1ED98D8D96DB05AD44 /* Pods_KwaiRtcDemoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KwaiRtcDemoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF876CA421ABB36FA3F8CA79 /* Pods-KwaiRtcDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KwaiRtcDemoiOS.debug.xcconfig"; path = "Target Support Files/Pods-KwaiRtcDemoiOS/Pods-KwaiRtcDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		351D4CBF26EDB05B008B4639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D167F788BB4B066DE77ACB /* Pods_KwaiRtcDemoiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA6BF47614D0235415B9E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9076ED1ED98D8D96DB05AD44 /* Pods_KwaiRtcDemoiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		351D4CB926EDB05B008B4639 = {
+			isa = PBXGroup;
+			children = (
+				351D4CC426EDB05B008B4639 /* KwaiRtcDemoiOS */,
+				351D4CC326EDB05B008B4639 /* Products */,
+				AAC5DFC3F242DAEC998A7CE4 /* Pods */,
+				1FA6BF47614D0235415B9E8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		351D4CC326EDB05B008B4639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				351D4CC226EDB05B008B4639 /* KwaiRtcDemoiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		351D4CC426EDB05B008B4639 /* KwaiRtcDemoiOS */ = {
+			isa = PBXGroup;
+			children = (
+				351D4CFC26EDDD3B008B4639 /* Sources */,
+				351D4CC526EDB05B008B4639 /* AppDelegate.h */,
+				351D4CC626EDB05B008B4639 /* AppDelegate.m */,
+				351D4CD126EDB05C008B4639 /* Assets.xcassets */,
+				351D4CD326EDB05C008B4639 /* LaunchScreen.storyboard */,
+				351D4CD626EDB05C008B4639 /* Info.plist */,
+				351D4CD726EDB05C008B4639 /* main.m */,
+				351D4D2C26EDE0B7008B4639 /* PrefixHeader.pch */,
+			);
+			indentWidth = 4;
+			path = KwaiRtcDemoiOS;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		351D4CFC26EDDD3B008B4639 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35C2D9652729563E008B3FB5 /* DemoBiz */,
+				35F7C07F26F08F6D00706321 /* Setting */,
+				351D4D3526EE36C0008B4639 /* Room */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		351D4D3526EE36C0008B4639 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				351D4D3826EE36DB008B4639 /* Controller */,
+				351D4D3726EE36D6008B4639 /* View */,
+				351D4D3626EE36D1008B4639 /* Model */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		351D4D3626EE36D1008B4639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				351D4D5626EE4A4B008B4639 /* KWRtcRoomParam.h */,
+				351D4D5726EE4A4B008B4639 /* KWRtcRoomParam.m */,
+				35F610F526F330940041CE45 /* KWRtcUser.h */,
+				35F610F626F330940041CE45 /* KWRtcUser.m */,
+				35C2D96227294B2A008B3FB5 /* KWRtcQosInfo.h */,
+				35C2D96327294B2A008B3FB5 /* KWRtcQosInfo.m */,
+				353179D826F4CB8C003416C3 /* KWRtcSharedDataMgr.h */,
+				353179D926F4CB8C003416C3 /* KWRtcSharedDataMgr.m */,
+				35F610F826F338D90041CE45 /* KWRtcRoomDataMgr.h */,
+				35F610F926F338D90041CE45 /* KWRtcRoomDataMgr.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		351D4D3726EE36D6008B4639 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				351D4D5226EE3840008B4639 /* KWRtcPlayerContainerView.h */,
+				351D4D5326EE3840008B4639 /* KWRtcPlayerContainerView.m */,
+				35F7C08626F0909500706321 /* KWRtcPlayerWrapperView.h */,
+				35F7C08726F0909500706321 /* KWRtcPlayerWrapperView.m */,
+				35EDC98E26F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.h */,
+				35EDC98F26F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		351D4D3826EE36DB008B4639 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				351D4D3926EE36FA008B4639 /* KWRtcRoomViewController.h */,
+				351D4D3A26EE36FA008B4639 /* KWRtcRoomViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35C2D9652729563E008B3FB5 /* DemoBiz */ = {
+			isa = PBXGroup;
+			children = (
+				351D4D0326EDDDA7008B4639 /* KWBaseViewController.h */,
+				351D4D0426EDDDA7008B4639 /* KWBaseViewController.m */,
+				351D4D0726EDDDD0008B4639 /* KWLoginViewController.h */,
+				351D4D0826EDDDD0008B4639 /* KWLoginViewController.m */,
+				354248D92728484A007C65E4 /* KWRtcDemoUI.h */,
+				354248DA2728484A007C65E4 /* KWRtcDemoUI.m */,
+				351D4D3026EDE1AF008B4639 /* KWCommonUtil.h */,
+				351D4D3126EDE1AF008B4639 /* KWCommonUtil.m */,
+				35998B0026F1F23F00458CC7 /* UIButton+KWExt.h */,
+				35998B0126F1F23F00458CC7 /* UIButton+KWExt.m */,
+				35DE197826F8B7B70017A149 /* UIView+KWExt.h */,
+				35DE197926F8B7B70017A149 /* UIView+KWExt.m */,
+				35D9DA6426FDED2900881C1B /* NSDictionary+KWExt.h */,
+				35D9DA6526FDED2900881C1B /* NSDictionary+KWExt.m */,
+			);
+			path = DemoBiz;
+			sourceTree = "<group>";
+		};
+		35F7C07F26F08F6D00706321 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				35F7C08226F08F7B00706321 /* Controller */,
+				35F7C08126F08F7700706321 /* View */,
+				35F7C08026F08F7200706321 /* Model */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		35F7C08026F08F7200706321 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35F788A727032409005212D0 /* KWSettingTableCellItem.h */,
+				35F788A827032409005212D0 /* KWSettingTableCellItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35F7C08126F08F7700706321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35F788A4270323F6005212D0 /* KWSettingTableViewCell.h */,
+				35F788A5270323F6005212D0 /* KWSettingTableViewCell.m */,
+				35F788AD27034B26005212D0 /* KWSettingResolutionTableViewCell.h */,
+				35F788AE27034B26005212D0 /* KWSettingResolutionTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35F7C08226F08F7B00706321 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35F7C08326F08F8900706321 /* KWSettingViewController.h */,
+				35F7C08426F08F8900706321 /* KWSettingViewController.m */,
+				35F788AA2703467A005212D0 /* KWSettingResolutionViewController.h */,
+				35F788AB2703467A005212D0 /* KWSettingResolutionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAC5DFC3F242DAEC998A7CE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF876CA421ABB36FA3F8CA79 /* Pods-KwaiRtcDemoiOS.debug.xcconfig */,
+				76B1950064CA47752C1C7B22 /* Pods-KwaiRtcDemoiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		351D4CC126EDB05B008B4639 /* KwaiRtcDemoiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351D4CDB26EDB05C008B4639 /* Build configuration list for PBXNativeTarget "KwaiRtcDemoiOS" */;
+			buildPhases = (
+				D88E95BE83247164540315B0 /* [CP] Check Pods Manifest.lock */,
+				351D4CBE26EDB05B008B4639 /* Sources */,
+				351D4CBF26EDB05B008B4639 /* Frameworks */,
+				351D4CC026EDB05B008B4639 /* Resources */,
+				FEC4A81FB8EEA2CFD929AF8C /* [CP] Embed Pods Frameworks */,
+				35F7C07E26F08A0800706321 /* Embed Frameworks */,
+				35F5688D26F4478000CFCBC6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KwaiRtcDemoiOS;
+			productName = KwaiRtcDemoiOS;
+			productReference = 351D4CC226EDB05B008B4639 /* KwaiRtcDemoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		351D4CBA26EDB05B008B4639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KW;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = kuaishou;
+				TargetAttributes = {
+					351D4CC126EDB05B008B4639 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 351D4CBD26EDB05B008B4639 /* Build configuration list for PBXProject "KwaiRtcDemoiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 351D4CB926EDB05B008B4639;
+			productRefGroup = 351D4CC326EDB05B008B4639 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				351D4CC126EDB05B008B4639 /* KwaiRtcDemoiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		351D4CC026EDB05B008B4639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351D4CD526EDB05C008B4639 /* LaunchScreen.storyboard in Resources */,
+				351D4CD226EDB05C008B4639 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F5688D26F4478000CFCBC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REV=`date +%y%m%d%H%M`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${REV}\" \"${TARGET_BUILD_DIR}\"/${INFOPLIST_PATH}\n";
+		};
+		D88E95BE83247164540315B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KwaiRtcDemoiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC4A81FB8EEA2CFD929AF8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KwaiRtcDemoiOS/Pods-KwaiRtcDemoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KwaiRtcDemoiOS/Pods-KwaiRtcDemoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KwaiRtcDemoiOS/Pods-KwaiRtcDemoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		351D4CBE26EDB05B008B4639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F610FA26F338D90041CE45 /* KWRtcRoomDataMgr.m in Sources */,
+				351D4D5426EE3840008B4639 /* KWRtcPlayerContainerView.m in Sources */,
+				35F788A927032409005212D0 /* KWSettingTableCellItem.m in Sources */,
+				35F7C08826F0909500706321 /* KWRtcPlayerWrapperView.m in Sources */,
+				35EDC99026F047E9006F4C4A /* KWRtcPlayerCollectionViewCell.m in Sources */,
+				35F788AF27034B26005212D0 /* KWSettingResolutionTableViewCell.m in Sources */,
+				351D4D0926EDDDD0008B4639 /* KWLoginViewController.m in Sources */,
+				35F610F726F330940041CE45 /* KWRtcUser.m in Sources */,
+				351D4D3B26EE36FA008B4639 /* KWRtcRoomViewController.m in Sources */,
+				354248DB2728484A007C65E4 /* KWRtcDemoUI.m in Sources */,
+				351D4D0526EDDDA7008B4639 /* KWBaseViewController.m in Sources */,
+				35998B0226F1F23F00458CC7 /* UIButton+KWExt.m in Sources */,
+				35D9DA6626FDED2900881C1B /* NSDictionary+KWExt.m in Sources */,
+				351D4D5826EE4A4B008B4639 /* KWRtcRoomParam.m in Sources */,
+				351D4CC726EDB05B008B4639 /* AppDelegate.m in Sources */,
+				351D4CD826EDB05C008B4639 /* main.m in Sources */,
+				35F788A6270323F6005212D0 /* KWSettingTableViewCell.m in Sources */,
+				351D4D3226EDE1AF008B4639 /* KWCommonUtil.m in Sources */,
+				35DE197A26F8B7B70017A149 /* UIView+KWExt.m in Sources */,
+				35F788AC2703467A005212D0 /* KWSettingResolutionViewController.m in Sources */,
+				35F7C08526F08F8900706321 /* KWSettingViewController.m in Sources */,
+				353179DA26F4CB8C003416C3 /* KWRtcSharedDataMgr.m in Sources */,
+				35C2D96427294B2A008B3FB5 /* KWRtcQosInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		351D4CD326EDB05C008B4639 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				351D4CD426EDB05C008B4639 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		351D4CD926EDB05C008B4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		351D4CDA26EDB05C008B4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		351D4CDC26EDB05C008B4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF876CA421ABB36FA3F8CA79 /* Pods-KwaiRtcDemoiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5F734GT2HZ;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
+				INFOPLIST_FILE = KwaiRtcDemoiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.video.VideoCallDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Universal_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		351D4CDD26EDB05C008B4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B1950064CA47752C1C7B22 /* Pods-KwaiRtcDemoiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5F734GT2HZ;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
+				INFOPLIST_FILE = KwaiRtcDemoiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.video.VideoCallDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Universal_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		351D4CBD26EDB05B008B4639 /* Build configuration list for PBXProject "KwaiRtcDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351D4CD926EDB05C008B4639 /* Debug */,
+				351D4CDA26EDB05C008B4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351D4CDB26EDB05C008B4639 /* Build configuration list for PBXNativeTarget "KwaiRtcDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351D4CDC26EDB05C008B4639 /* Debug */,
+				351D4CDD26EDB05C008B4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 351D4CBA26EDB05B008B4639 /* Project object */;
+}
