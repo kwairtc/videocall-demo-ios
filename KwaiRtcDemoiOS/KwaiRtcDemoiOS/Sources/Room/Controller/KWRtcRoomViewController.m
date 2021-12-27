@@ -126,8 +126,8 @@
     config.appId = KRTC_APP_ID;
     config.appName = KRTC_APP_NAME;
     config.appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
-    config.deviceId = [KuaishouRtcEngine getDeviceId];
     config.appUserId = self.roomParam.userId;
+    config.deviceId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     self.rtcEngine = [[KuaishouRtcEngine alloc] initEngineWithConfig:config delegate:self];
 
     // 设置KuaishouRtcEngine日志参数
